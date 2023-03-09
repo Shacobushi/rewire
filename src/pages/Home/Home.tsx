@@ -20,7 +20,7 @@ const Home = () => {
   const [selectedDay, setSelectedDay] = useState<number>(0);
 
   useEffect(() => {
-    // I've used an use effect to emulate the API call
+    // I've used an useEffect because usually we would have fetched data here.
     const userList = Object.entries(data).map((user) => ({
       username: user[0],
       day: Object.keys(user[1]).map((d, index) => ({
@@ -28,7 +28,6 @@ const Home = () => {
         score: Object.values(user[1])[index].sc,
       })),
     }));
-
     setUsers(userList);
     setDays(userList[0].day.map((day) => day.timestamp));
   }, []);

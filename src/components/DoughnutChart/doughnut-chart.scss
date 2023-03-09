@@ -1,0 +1,5 @@
+.doughnut {
+  background-color: map-get(map-get($palette, border-chart), light);
+  border-radius: 50%;
+  padding: 0.3rem;
+}

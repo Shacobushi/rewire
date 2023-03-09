@@ -1,0 +1,20 @@
+.footer {
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  p {
+    margin: 0.5rem 0;
+  }
+  h4{
+    margin: 1rem 0rem;
+  }
+  .icons-container {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+    a {
+      color: white;
+      font-size: 1.5rem;
+    }
+  }
+}

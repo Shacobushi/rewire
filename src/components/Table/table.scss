@@ -1,0 +1,44 @@
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  height: 100%;
+  thead{
+      th {
+        border: 2px solid map-get($palette,  border-color);
+        color: map-get($palette, text);
+        padding: 0.5rem;
+      }
+      th:nth-child(even){
+        min-width: 35%;
+      }
+  }
+  tbody {
+    tr:nth-child(even){
+      .doughnut-card {
+        background-color: map-get(map-get($palette, tr), dark);
+        .doughnut {
+          background-color: map-get(map-get($palette, border-chart), dark);
+        }
+      }
+    }
+    tr:nth-child(odd){
+      background-color: map-get(map-get($palette, tr), light);
+      .doughnut-card {
+        background-color: map-get(map-get($palette, tr), light);
+        .doughnut {
+          background-color: map-get(map-get($palette, border-chart), light);
+        }
+      }
+    }
+    td:nth-child(odd){
+      text-transform: uppercase;
+      font-weight: bold;
+      text-align: left;
+      padding-left: 1rem;
+    }
+  }
+  td {
+    text-align: center;
+    border: 2px solid map-get($palette, border-color);
+  }
+}

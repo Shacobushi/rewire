@@ -2,6 +2,7 @@
   text-align: center;
   padding: 1rem;
   margin-bottom: 1.5rem;
+  border: 2px solid map-get($palette, border-color);
   p {
     margin: 0.5rem 0;
   }
